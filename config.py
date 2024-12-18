@@ -6,11 +6,11 @@ class Config(object):
 
     # i/o paths
     self.hypo_root = '/home/zhouyj/bin'
-    self.ctlg_code = 'eafz_test'
-    self.fsta = 'input/station_fdsn-afad-sel_pal.csv'
-    self.fpha = 'input/tk-long_sar-phn_ct_full.pha'
-    self.event_root = '/data3/bigdata/zhouyj/tk-long_sar-phn_events_1-16hz_1'
-    self.data_dir = '/data1/Turkey_clean'
+    self.ctlg_code = 'eg'
+    self.fsta = 'input/station_eg.csv'
+    self.fpha = 'input/phase_eg.csv'
+    self.event_root = '/data/bigdata/eg_events_data'
+    self.data_dir = '/data/Continuous_data_eg'
     # thresholds for event pair link
     self.cc_thres = [0.5,0.9] # CC thres for event pair
     self.dt_thres = [[0.5,0.8,0.04],[0.5,0.8,0.01]] # dt_p, dt_s, d(S-P)
