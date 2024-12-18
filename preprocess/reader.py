@@ -57,18 +57,3 @@ def dtime2str(dtime):
 
 """ Custimized functions
 """
-def get_tk_data(date, data_dir):
-    # get data paths
-    data_dict = {}
-    date_code = '{:0>4}{:0>2}{:0>2}'.format(date.year, date.month, date.day)
-    st_paths = sorted(glob.glob(os.path.join(data_dir, date_code, '*')))
-    for st_path in st_paths:
-        fname = os.path.basename(st_path)
-        net_sta = '.'.join(fname.split('.')[0:2])
-        if net_sta in data_dict: data_dict[net_sta].append(st_path)
-        else: data_dict[net_sta] = [st_path]
-    # drop bad sta
-    todel = [net_sta for net_sta in data_dict if len(data_dict[net_sta])<3]
-    for net_sta in todel: data_dict.pop(net_sta)
-    for net_sta in data_dict: data_dict[net_sta] = data_dict[net_sta][0:3]
-    return data_dict

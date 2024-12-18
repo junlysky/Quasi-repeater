@@ -4,7 +4,7 @@ import torch.multiprocessing as mp
 from torch.utils.data import Dataset, DataLoader
 from obspy import read, UTCDateTime
 from signal_lib import preprocess, obspy_slice
-from reader import read_fpha, get_tk_data, dtime2str
+from reader import read_fpha, get_data_dict, dtime2str
 shutil.copyfile('../config.py', 'config.py')
 import config
 import warnings
@@ -19,7 +19,7 @@ if not os.path.exists(out_root): os.makedirs(out_root)
 # signal process
 num_workers = cfg.num_workers
 win_len = cfg.win_event
-get_data_dict = get_tk_data # modify this if using customized function
+get_data_dict = get_data_dict # modify this if using customized function
 samp_rate = cfg.samp_rate
 freq_band = cfg.freq_band
 
