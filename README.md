@@ -1,1 +1,2 @@
-Detection of repeating and quasi-repeating earthquakes
+# Quasi-repeater  
+Detection of repeating and quasi-repeating earthquakes.
