@@ -1,6 +1,9 @@
 # Quasi-repeater  
 Detection of repeating and quasi-repeating earthquakes.  
 
+## **Workflow**  
+![Zhou & Ghosh, (2024)](./doc/Quasi-repeater_workflow.jpg)  
+
 - **Usage** 
 ```bash
 python 1_cc_link.py
