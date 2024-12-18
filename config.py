@@ -8,7 +8,7 @@ class Config(object):
     self.hypo_root = '/home/zhouyj/bin'
     self.ctlg_code = 'eg'
     self.fsta = 'input/station_eg.csv'
-    self.fpha = 'input/phase_eg.csv'
+    self.fpha = 'input/phase_eg.csv'  # the example file is not complete, just to show the format
     self.event_root = '/data/bigdata/eg_events_data'
     self.data_dir = '/data/Continuous_data_eg'
     # thresholds for event pair link
