@@ -5,11 +5,11 @@ import warnings
 warnings.filterwarnings("ignore")
 
 # i/o paths
-fclust = '../output/eafz-rep_selected-add-events.clust'
-fout = open('../output/eafz-rep_selected-add-events_refine-mag.clust','w')
-event_root = '/data3/bigdata/zhouyj/tk-long_sar-phn_events_1-20hz_2'
-fpha = '../output/eafz-repeater_refine-mag_full.pha'
-fsta = '../input/station_fdsn-afad-sel_pal.csv'
+fclust = '../output/eg_rep-qrep.clust'
+fout = open('../output/eg_rep-qrep_rel-mag.clust','w')
+event_root = '/data/bigdata/eg_events_data'
+fpha = '../output/eg_rep-qrep_refine-mag_full.pha'
+fsta = '../input/station_eg.csv'
 # selection
 win_amp = [1,10]
 dist_max = 100
