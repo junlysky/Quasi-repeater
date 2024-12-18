@@ -1,6 +1,13 @@
 # Quasi-repeater  
 Detection of repeating and quasi-repeating earthquakes.  
 
+- **Usage** 
+```bash
+python 1_cc_link.py
+python 2_init_clustering.py
+python 3_relink_clustering.py
+```  
+
 ## Installation  
 Quasi-repeater is a set of codes. All you need is to setup proper Python environment. This can be accomplished easily by installing [Anaconda](https://www.anaconda.com/products/individual#Downloads), [Obspy](https://github.com/obspy/obspy/wiki/Installation-via-Anaconda), and [PyTorch](https://pytorch.org/) sequentially.  
 
