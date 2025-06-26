@@ -162,8 +162,7 @@ cluster_dict = read_cluster_phase_file('output/eg_clustered.pha')
 for cluster_id in cluster_dict:
     #cluster_id = str(0)
     cluster_events = cluster_dict[cluster_id]
-
-
-
-
     plot_cluster_waveforms(cluster_id, cluster_events, data_path)    
+
+
+
